@@ -5,7 +5,7 @@
     background-color: #131921;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 2;
   }
   
   .header__logo {
@@ -81,4 +81,62 @@
 
 .header__option:hover, .header__optionBasket:hover {
     border: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .header {
+    padding-bottom: 5px;
+    height: 20%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__search {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .header__searchInput {
+    margin-left: 10px;
+    border-radius: 4px;
+    height: 13px;
+    padding: 10px;
+
+    width: 330px;
+  }
+
+  .header__searchIcon {
+    border-radius: 4px;
+    height: 22px ;
+    background-color: rgb(255, 175, 27);
+    margin-right: 10px;
+    margin-left: 3px;
+    
+  }
+
+  .header__option {
+    
+    color: white;
+    border: 1px solid #131921;
+    cursor: pointer;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    
+}
+
 }
